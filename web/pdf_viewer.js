@@ -24,11 +24,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/web/pdf_viewer", [], factory);
+		define("demo/web/pdf_viewer", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/web/pdf_viewer"] = factory();
+		exports["demo/web/pdf_viewer"] = factory();
 	else
-		root["pdfjs-dist/web/pdf_viewer"] = root.pdfjsViewer = factory();
+		root["demo/web/pdf_viewer"] = root.pdfjsViewer = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -406,8 +406,8 @@ exports.DefaultAnnotationLayerFactory = DefaultAnnotationLayerFactory;
 
 var pdfjsLib;
 
-if (typeof window !== 'undefined' && window['pdfjs-dist/build/pdf']) {
-  pdfjsLib = window['pdfjs-dist/build/pdf'];
+if (typeof window !== 'undefined' && window['demo/build/pdf']) {
+  pdfjsLib = window['demo/build/pdf'];
 } else {
   pdfjsLib = require('../build/pdf.js');
 }

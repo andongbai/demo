@@ -24,11 +24,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("pdfjs-dist/image_decoders/pdf.image_decoders", [], factory);
+		define("demo/image_decoders/pdf.image_decoders", [], factory);
 	else if(typeof exports === 'object')
-		exports["pdfjs-dist/image_decoders/pdf.image_decoders"] = factory();
+		exports["demo/image_decoders/pdf.image_decoders"] = factory();
 	else
-		root["pdfjs-dist/image_decoders/pdf.image_decoders"] = root.pdfjsImageDecoders = factory();
+		root["demo/image_decoders/pdf.image_decoders"] = root.pdfjsImageDecoders = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
